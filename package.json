@@ -1,0 +1,36 @@
+{
+  "name": "npm-lambda-pack",
+  "version": "0.0.1",
+  "description": "Npm pack for Lambda",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nak2k/node-npm-lambda-pack/issues"
+  },
+  "dependencies": {
+    "npm-packlist": "^1.1.10",
+    "pack-deps": "0.0.8",
+    "run-parallel": "^1.1.9"
+  },
+  "devDependencies": {
+    "tape": "^4.9.1"
+  },
+  "homepage": "https://github.com/nak2k/node-npm-lambda-pack",
+  "keywords": [
+    "aws",
+    "lambda"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-npm-lambda-pack.git"
+  },
+  "scripts": {
+    "prepublishOnly": "npm t",
+    "test": "tape test/test*"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
