@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "npm-packlist": "^1.1.10",
-    "pack-deps": "0.0.8",
+    "pack-deps": "0.0.9",
     "run-parallel": "^1.1.9"
   },
   "devDependencies": {
