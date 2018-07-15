@@ -4,14 +4,15 @@ const { dirname } = require('path');
 const { tmpdir } = require('os');
 
 test('test pack', t => {
-  t.plan(2);
+  t.plan(3);
 
   pack({
     pkgJson: require('..'),
     pkgDir: dirname(__dirname),
     cacheBaseDir: tmpdir(),
-  }, (err, zip) => {
+  }, (err, { thumbprint, zip }) => {
     t.error(err);
     t.equal(Object.keys(zip.files).length, 4);
+    t.equal(thumbprint.length, 32);
   });
 });
