@@ -1,6 +1,6 @@
 {
   "name": "npm-lambda-pack",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Npm pack for Lambda",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
