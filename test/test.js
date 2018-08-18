@@ -10,7 +10,9 @@ test('test pack', t => {
     pkgJson: require('..'),
     pkgDir: dirname(__dirname),
     cacheBaseDir: tmpdir(),
-  }, (err, { thumbprint, zip }) => {
+  }, (err, result) => {
+    const { thumbprint, zip } = result;
+
     t.error(err);
     t.equal(Object.keys(zip.files).length, 4);
     t.equal(thumbprint.length, 32);
