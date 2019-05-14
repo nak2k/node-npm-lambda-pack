@@ -17,6 +17,7 @@
   "homepage": "https://github.com/nak2k/node-npm-lambda-pack",
   "keywords": [
     "aws",
+    "awslambda",
     "lambda"
   ],
   "license": "MIT",
